@@ -9,18 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("user_9s3f7upfluUeQLaB0AF4W");
-            emailjs.send("iCloud_Email_JS","template_do7hxpl",{name: "John", notes: "The project that I want is...."});
-        })();
-</script>
-
     <title>Curriculum Vitae - John Doyle</title>
 </head>
+
 <body>
     <header>
         <div class="row no-gutters">
@@ -60,23 +51,84 @@
         </div>
     </header>
     <section class="container-fluid">
-        <div class="row bg-color-contact">
-            <div class="col">
-                <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
-                <h5 class="uppercase text-center">Let's work together!</h5>
-
-                <div class="center-form">
-                    <form onsubmit="return sendMail(this);">
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send Project Request</button>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 bg-color-conferences section-column">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Conferences and Meetups attended</h3>
+                    </div>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 bg-color-groups section-column">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase"> My groups and societies</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Coding Grace</h4>
+                                <p>
+                                    Coding Grace are a group of developers based in Ireland who love to code and do other geeky and not necessarily crafty activities. Some of us code full-time, or just for fun (or both). We have people who are part of other technical user groups such as
+                                    Dublin ALT.NET, GameCraft, Python Ireland, Ruby Ireland and more.
+                                    <a href="https://codinggrace.com/" target="_blank">Coding Grace</a>
+                                </p>
                             </div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Django Girls</h4>
+                                <p>
+                                    Django Girls is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing
+                                    to bring more amazing women into the world of technology.
+                                    <a href="https://djangogirls.org/" target="_blank">Django Girls</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">Full Stack NY</h4>
+                                <p>
+                                    Our meetup is an event where web designers and developers can come together to learn from and teach each other about emerging technologies. While speakers at Full Stack focus primarily on angularjs, react, node, hapiJS, espress, plain ole' JavaScript,
+                                    HTML, and CSS, we encourage all local web professionals to join us for vivid discussions around technology across the stack in any language.
+                                    <a href="https://www.meetup.com/javascript-full-stack-development/" target="_blank">Full Stack NY</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2  col-md-2">
+                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-10 col-sm-10">
+                                <h4 class="three-reasons-heading uppercase">IoT Nation</h4>
+                                <p>
+                                    IoT Nation's mission is to inspire, engage, and connect entrepreneurs, investors, professionals, & enthusiasts worldwide who are active in the Internet of Things (IoT). This group is for professionals and enthusiasts in the Internet of Things. We welcome
+                                    those who want to learn about this emerging field which is fascinating as IoT makes use of a diverse range of technologies and has the promise to impact a vast number of vertical markets.
+                                    <a href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -142,6 +194,9 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/sendemail.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI0rc1ZvfO828hTnPYpMt6Y-cLyqufFjk&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
 </body>
+
 </html>
