@@ -35,7 +35,7 @@
 }
 
 .ui-menu-color-home {
-    background-color: #e67e22;
+    background-color: #10A463;
 }
 
 .ui-menu-color-resume {
@@ -47,16 +47,16 @@
 }
 
 .ui-menu-color-download {
-    background-color: #d9a81d;
+    background-color: #e0aa10;
 }
 
 
 .ui-menu-color-github {
-    background-color: #1c4a6c;
+    background-color: #153c58;
 }
 
 .ui-menu-color-interests {
-    background-color: #e74c3c;
+    background-color: #d82d1c;
 }
 
 
@@ -250,11 +250,24 @@ footer .cv-pdf i:hover {
 
 .three-reasons-icon {
     font-size: 26px;
-    color: #e67e22;
 }
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+/*--------------------------------------------Icons*/
+
+.home-icon {
+    color: #10A463;
+}
+
+.resume-icon {
+    color: #9b59b6;
+}
+
+.interests-icon {
+    color: #d82d1c;
 }
 
 /*--------------------------------------------Personal Info*/
@@ -382,7 +395,7 @@ footer .cv-pdf i:hover {
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: #e84610;
+    background-color: #3498db;
     color: #fafafa;
 }
 
